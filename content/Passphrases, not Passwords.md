@@ -13,7 +13,8 @@ Let’s be honest here. At one point or another, you’ve most likely used a wea
 Take the password “jennifer” for example. Maybe you think that’s a good password. “Who’s going to guess my password is “jennifer”?”
 
 > _Scenario: Your computer is no longer in your control, but the important files on your computer are encrypted. Whoever has your computer doesn’t know the password that is being used to encrypt the files, so the password must be cracked instead.  
-> _**_Cracking the password “jennifer” will take roughly 3 seconds._**
+> 
+> **Cracking the password “jennifer” will take roughly 3 seconds.**
 
 Make sense? You wouldn’t leave your front door unlocked when you go on holiday, and using a weak password is basically the same thing. You’re _giving_ criminals access to your personal data.
 
@@ -25,7 +26,8 @@ While you can brainstorm for a while, or bust out a thesaurus to get some cool w
 Looking around my desk, I see a small piece of cardboard, a pen and a battery. Let’s piece that together in some way.. maybe, “Draw battery on cardboard with pen”. That’s it. If you can memorise something like that (which is a lot easier than trying to memorise h0D0rK22~.-) you will be much more secure. Let’s check out how long it would take to guess that password.
 
 > _Scenario: Your computer is no longer in your control, but the important files on your computer are encrypted. Whoever has your computer doesn’t know the password that is being used to encrypt the files, so the password must be cracked instead.  
-> _**_Cracking the password “Draw battery on cardboard with pen”, at one hundred TRILLION guesses per second, will take about 4.03928652 × 1051 seconds. So, roughly 1.28 million trillion trillion trillion centuries. Quite the difference._**
+> 
+**Cracking the password “Draw battery on cardboard with pen”, at one hundred TRILLION guesses per second, will take about 4.03928652 × 1051 seconds. So, roughly 1.28 million trillion trillion trillion centuries. Quite the difference.**
 
 # Password Managers
 
