@@ -7,21 +7,17 @@ Let’s get into it:
 
 # First Steps
 
-Let’s start off with a nmap. Well, we have to, it’s part of the task.
+Let’s start off with an nmap. Well, we have to, it’s part of the task.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*-KI083Zrc1IYVKMxly1hJQ.png)
+![[nmap.bmp]]
 
 Once nmap is finished, we see the open ports, along with the Apache version, and SSH on port 22.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Pl6Fx9K77MneAUUaMkL3zw.png)
-
-nmap
+![[nmap_results.bmp]]
 
 After browsing to the site and seeing a static page, we can use our big brains and run a gobuster in dir mode. Or, we can read the next task, and figure it out that way. But pretending you thought of it all on your own is way better.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*cm44mwY8w3aJSnNz1WO2UA.png)
-
-gobuster dir command
+![[gobuster dir command.bmp]]
 
 If you’re confused, I’ll break down this command.
 
@@ -44,15 +40,15 @@ This puts the resulting gobuster scan into a file called gobuster.out, which you
 
 Anyway, once that’s done, we see a couple of directories:
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Fcq-HNfrDn7i978uSRljmw.png)
+![[gobuster.out.bmp]]
+
 
 gobuster.out
 
 Panel? Weird. Let’s go there!
 
-![](https://miro.medium.com/v2/resize:fit:700/1*FArNkBpliX7f9SinuuMvEQ.png)
+![[panel.bmp]]
 
-/panel
 
 Oooh, baby. Break out the red panties.
 
@@ -60,9 +56,9 @@ Oooh, baby. Break out the red panties.
 
 First, let’s get our webshell, and change the variables inside to match our IP and port we’re gonna listen on:
 
-![](https://miro.medium.com/v2/resize:fit:700/1*7qXVJVsJunn0N9cpllzqjg.png)
+![[webshell.bmp]]
 
-![](https://miro.medium.com/v2/resize:fit:323/1*HjiNqLSWSSfkEHG29jAJRw.png)
+![[webshell2.bmp]]
 
 How do I know that we can upload a webshell here, you might be asking?  
 Well, the task says: _‘find a form to upload and get a reverse shell, and find the flag.’_
@@ -71,7 +67,7 @@ So, you know, just assuming.
 
 Anyway, let’s upload!
 
-![](https://miro.medium.com/v2/resize:fit:700/1*m0I5cDFBPZQyM8msoVnBzQ.png)
+![[panel error.bmp]]
 
 Oh. Damn.  
 I’m no polyglot, but I think I know what that error is.
@@ -82,13 +78,13 @@ First, I change the filename to shell.jpg.php, and... nada.
 
 How about shell.php5?
 
-![](https://miro.medium.com/v2/resize:fit:690/1*ef_K2dotnbYbbiyc5eNWYw.png)
+![[panel success.bmp]]
 
 Wow. That was easy.
 
 Run `nc -lnvp 9001` before we visit the shell.php5 page and hooray!
 
-![](https://miro.medium.com/v2/resize:fit:700/1*mAyPxC0hzu9adca6qoHClA.png)
+![[netcat.bmp]]
 
 Connected!
 
@@ -96,11 +92,11 @@ So, we have our shell now! Some people might go about upgrading it, with their `
 
 Let’s have a little snoop around. First, let’s get user.txt, considering that’s our next task.
 
-![](https://miro.medium.com/v2/resize:fit:164/1*bQ0ia4XbEoY3KS2YIzCYBg.png)
+![[ls var.bmp]]
 
 Nothing there. A quick `whoami` confirms we’re logged in as www-data. Let’s check around there.
 
-![](https://miro.medium.com/v2/resize:fit:426/1*JvU9nkIOetaR1E7ueoG44w.png)
+![[catuser.bmp]]
 
 Bingpot.
 
@@ -108,19 +104,19 @@ Now, let’s escalate dem privileges, son.
 
 Usually I’d run LinEnum or Linpeas or something at this stage, but the next task said to search files with SUID permission, so I just did that instead, along with searching for files owned by root.
 
-![](https://miro.medium.com/v2/resize:fit:509/1*0rv1gFbwXAHpnnkFQRF5cQ.png)
+![[permissiondenied.bmp]]
 
 Once you painstakingly scroll through the infinite `permission denied`’s, you’ll see `/usr/bin/python`. That’s weird. Let me just double check something, to make sure.. maybe my syntax was wrong?
 
-![](https://miro.medium.com/v2/resize:fit:536/1*MWiT4VSw5uiELj2FOQv39w.png)
+![[pythonroot.bmp]]
 
-Yep, owned by root. Ladies and gentlemen, we have our target. Let’s head to gtfobins and look for something there.
+Yep, owned by root. Ladies and gentlemen, we have our target. Let’s head to gtfobins and look for something there. _(Edit - Feb 2025: this command is literally burned into my brain)_
 
-![](https://miro.medium.com/v2/resize:fit:425/1*rQte2Ms_Vwg3eFXSM6E1ww.png)
+![[gtfobins.bmp]]
 
 This looks like it will do the trick.
 
-![](https://miro.medium.com/v2/resize:fit:584/1*d6uZAuSCH-XhU021bgp1bg.png)
+![[rooted.bmp]]
 
 The trick has indeed been done.
 
