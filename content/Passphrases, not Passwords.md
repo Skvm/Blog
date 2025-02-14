@@ -1,5 +1,9 @@
-#security 
-s
+---
+tags:
+  - security
+---
+
+
 You use passwords every day, for everything from social media to bank accounts. Give this article a quick browse to make those accounts more secure.
 
 For this post, we are going to assume that the password is being used to protect a local file, rather than an online account. It will **always** be faster to crack a password locally, rather than online, but don’t let that cloud your judgement, everything mentioned here goes for online passwords too. Always be secure.
