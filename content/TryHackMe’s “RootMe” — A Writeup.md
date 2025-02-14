@@ -98,7 +98,7 @@ Nothing there. A quick `whoami` confirms we’re logged in as www-data. Let’s 
 
 ![[catuser.bmp]]
 
-Bingpot.
+_*Bingpot*_.
 
 Now, let’s escalate dem privileges, son.
 
