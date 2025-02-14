@@ -3,11 +3,6 @@ tags:
   - security
 ---
 
-```
-This article was originally written in 2021 on Medium.
-```
-
-
 You use passwords every day, for everything from social media to bank accounts. Give this article a quick browse to make those accounts more secure.
 
 For this post, we are going to assume that the password is being used to protect a local file, rather than an online account. It will **always** be faster to crack a password locally, rather than online, but don’t let that cloud your judgement, everything mentioned here goes for online passwords too. Always be secure.
@@ -53,3 +48,5 @@ Other options would be [Dashlane](https://www.dashlane.com/) or [KeePass](http:/
 # Conclusion
 
 In conclusion, stop using 1 word passwords with numbers at the end, and use a passphrase instead. If you’re lazy, use a password manager. Thanks for reading! Let me know if there’s anything you think I may have missed.
+
+	This article was originally written by myself in 2021 on Medium.com
