@@ -3,9 +3,10 @@ tags:
   - security
 ---
 
-```ad-note
+```
 This article was originally written in 2021 on Medium.
 ```
+
 
 You use passwords every day, for everything from social media to bank accounts. Give this article a quick browse to make those accounts more secure.
 
