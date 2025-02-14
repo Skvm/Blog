@@ -9,7 +9,7 @@ Insert lorem ipsum here
 
 # Sections
 ---
-- [tag::#security](Hello)
+- [Security](tags/security)
 
 # Contact
 ---
