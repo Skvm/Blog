@@ -9,11 +9,11 @@ Insert lorem ipsum here
 
 # Sections
 ---
-- General
+- [General](tags/general)
 - [Security](tags/security)
-- Maths
-- Development
-- Misc
+- [Maths](tags/maths)
+- [Development](tags/dev)
+- [Misc](tags/misc)
 
 # Contact
 ---
