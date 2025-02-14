@@ -9,8 +9,13 @@ Insert lorem ipsum here
 
 # Sections
 ---
+- General
 - [Security](tags/security)
+- Maths
+- Development
+- Misc
 
 # Contact
 ---
-Contact info
+- Github: [skvm](https://github.com/skvm)
+- Discord: .skam
