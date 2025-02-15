@@ -5,7 +5,7 @@ title: Hello!
 Welcome!
 # About Me
 ---
-Insert lorem ipsum here
+Programmer, web developer, security enthusiast, and Oxford comma enjoyer.
 
 # Sections
 ---
